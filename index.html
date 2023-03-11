@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <!-- Banner -->
+    <div class="row">
+      <div class="column left">
+        <div class="logo">
+          <img src="wilson.png" id="wilson_logo" alt="Wilson logo" />
+          <h1 id="logo_text">Wilson</h1>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="column right">
+        <h2>Placeholder text about this</h2>
+        <form action="POST" id="signup_form">
+          <h3>Let's do this!</h3>
+          <br />
+          <div class="input">
+            <label for="first_name">First Name</label><br />
+            <input type="text" name="first_name" id="first_name" required><br />
+          </div>
+
+          <div class="input">
+            <label for="email">Email</label><br />
+            <input type="email" name="email" id="email" required><br />
+          </div>
+
+          <div class="input">
+            <label for="last_name">Last Name</label><br />
+            <input type="text" name="last_name" id="last_name" required><br />
+          </div>
+
+          <div class="input">
+            <label for="phone">Phone Number</label><br />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            ><br />
+          </div>
+
+          <div class="input">
+            <label for="password">Password</label><br />
+            <input type="password" name="password" id="password" required><br />
+          </div>
+
+          <div class="input">
+            <!-- Use js to validate password -->
+            <label for="confirm_password">Confirm Password</label><br />
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+            required><br />
+          </div>
+
+          <span id="message"></span> <!-- Error message -->
+        </form>
+
+        <div class="input">
+          <input type="submit" id="submit" form="signup-form" value="Create Account" onclick="validateForm()">
+          <p>Already have an account? <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>Log in</a></p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
