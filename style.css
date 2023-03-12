@@ -17,6 +17,7 @@ form {
   display: grid;
   grid-template-columns: 0.2fr 0.2fr; /* creates 2 columns */
   gap: 15px; /* creates a gap between the columns and rows */
+  overflow: auto; /* add scrollbars if container gets too small*/
   background-color: rgb(213, 133, 12);
   box-shadow: 0px 2px 10px -3px rgba(32, 30, 31, 0.55);
   padding: 30px 0 30px 0;
